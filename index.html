@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+	<title>FORM VALIDATION</title>
+	<meta charset="utf-8">
+	<meta name="author" content="chethan chavan">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	
+ 	<link rel="icon" href="images/icon.png">
+
+
+  <!-- ********Link to Css File ************* -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- ************Css Linking Ends *************** -->
+
+    <!-- ********Link to js File ************* -->
+
+  <script src="js/validate.js"></script>
+
+  <!-- ************Js Linking Ends *************** -->
+
+    </head>
+
+  <body>
+
+  		<div class="heading">
+  			<h3>Registration For Online Course</h3>
+  		</div>
+
+      <div class="box">
+        <div class="form">
+           <form name="Registration" action="https://chethan-chavan.github.io/PERSONAL_WEBPAGE/" action="post" onsubmit="return validation()">
+
+          <div class="row">
+              <div class="column">
+            Name <span class="space"></span> <input type="text" id="name1" name="name" placeholder="Chethan chavan" required="" minlength="3" maxlength="10"> 
+            <br><span style="color: transparent; ">Number</span><span class="error" id="name2"></span><br>
+               </div>
+
+               <div class="column">
+            Age <span class="space2"></span><input type="number" name="age" id="age1" placeholder="18" required="" min="1" max="80">
+            <br><br>
+             </div>
+           </div>
+
+
+           <div class="row">
+           <div class="column">
+            Gender <span class="space3"></span><select required>
+
+                                                <option value="">Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="others">Others</option>
+                                               </select>
+
+            <br><br>  
+          </div>
+
+
+
+          <div class="column">
+            Education <input  type="text" name="ei1" required="" placeholder="School" minlength="10"><br> 
+          <span style="color: transparent; ">Education.</span><input  type="text" name="ei2" required="" placeholder="College" minlength="10"><br>
+          <span style="color: transparent; ">Education.</span><input  type="text" name="ei3" required="" placeholder="University" minlength="10">                                
+            <br><br>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="column">
+            Number <span class="space4"></span><input type="text" name="number" id="number1" placeholder="8904255643" required="">
+            <br><span style="color: transparent; ">Number</span><span class="error" id="number2"></span><br>
+          </div>
+
+          <div class="column">
+            Email <span class="space5"></span><input type="email" name="email" id="email1" placeholder="chethan@gmail.com" required="">
+            <br><br>
+           </div>
+          </div>
+
+
+          <div class="row">
+             <div class="column">
+            Password <span class="space6"></span><input type="Password" name="password" id="password1" placeholder="******" required="" minlength="8">
+            <br><span style="color: transparent; ">password</span><span class="error" id="password2"></span><br>
+             </div>
+
+
+          <div class="column">
+            Confirm <span class="space7"></span><input type="Password" name="confirm" id="confirm1" placeholder="******" required="">
+            <br><span style="color: transparent; ">confirm</span><span class="error" id="confirm2"></span><br>
+          </div>
+        </div>
+        </div>
+         </div>
+
+         <div class="cyanide">
+          <div class="row">
+
+            <div class="column">
+             <input class="submit submit2" type="submit" name="submit" value="submit">
+            </div>
+
+            <div class="column">
+              <input class="reset reset2" type="reset" name="reset" value="reset">
+            </div>
+          </div>
+        </div>
+           </form>
+        
+     
+  	
+  </body>
+
+</html>
